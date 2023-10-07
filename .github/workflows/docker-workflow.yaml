@@ -21,6 +21,6 @@ jobs:
         DOCKER_BUILDKIT: 1
         DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
       run: |
-        docker build -t abhishikth7/it-project-containerization:v1 .
+        docker build -t abhishikth7/it-project-containerization:v2 .
         echo $DOCKER_HUB_PASSWORD | docker login -u abhishikth7 --password-stdin
-        docker push abhishikth7/it-project-containerization:v1
+        docker push abhishikth7/it-project-containerization:v2
