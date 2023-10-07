@@ -1,0 +1,26 @@
+name: Build and Push Docker Image to Docker Hub, Provision Infrastructure in AWS, and Deploy Docker container in AWS EKS
+
+on:
+  push:
+    paths:
+      - 'Dockerfile'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Build and Push Docker image
+      env:
+        DOCKER_BUILDKIT: 1
+        DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      run: |
+        docker build -t abhishikth7/it-project-containerization:v1 .
+        echo $DOCKER_HUB_PASSWORD | docker login -u abhishikth7 --password-stdin
+        docker push abhishikth7/it-project-containerization:v1
