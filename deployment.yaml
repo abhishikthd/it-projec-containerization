@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: my-web-app
-        image: abhishikth7/it-project-containerization:v1
+        image: abhishikth7/it-project-containerization:v2
         ports:
         - containerPort: 80
