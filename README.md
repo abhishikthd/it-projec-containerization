@@ -55,4 +55,4 @@ To deploy my Dockerized application on AWS EKS with Terraform, I will follow the
 3. **Access My Application**: After deployment, I will use the EKS cluster's endpoint and ingress controller settings to access my application.
 
 ## Conclusion
-Congratulations! I have successfully set up a workflow to create and deploy a Dockerized application on AWS EKS using GitHub Actions and Terraform. This guide has covered the essential steps, from setting up the infrastructure to automating the deployment process.
+Completed successfully in setting up a workflow to create and deploy a Dockerized application on AWS EKS using GitHub Actions and Terraform. This guide has covered the essential steps, from setting up the infrastructure to automating the deployment process.
