@@ -1,5 +1,5 @@
 # Creating and Deploying a Dockerized Application on AWS EKS with GitHub Actions and Terraform
-Updated Output Link : ae7df9aa1a5614f54b493c2609a5209a-792229553.us-east-1.elb.amazonaws.com
+Updated Output Link : http://ae7df9aa1a5614f54b493c2609a5209a-792229553.us-east-1.elb.amazonaws.com/
 
 Welcome to my comprehensive guide on creating and deploying a Dockerized application on AWS EKS (Elastic Kubernetes Service) using GitHub Actions and Terraform. In this tutorial, I will cover the following steps:
 
